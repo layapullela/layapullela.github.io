@@ -22,8 +22,8 @@
         background-color: #f9f5eb; /* Off-white cream color */
       }
       
-      h1, h2, h3, h4, h5, h6 {
-        font-family: 'Georgia', serif;
+      /* Removing the font specification for headers, allowing them to use the default font */
+      h1, h2, h3, h4, h5, h6, .name {
         font-weight: 600;
       }
       
@@ -41,7 +41,6 @@
       
       .name {
         font-size: 40px;
-        font-weight: 600;
       }
       
       a {
@@ -51,6 +50,15 @@
       .papertitle {
         font-size: 20px;
         font-weight: 500;
+      }
+      
+      .teaching-text {
+        font-size: 10px; /* Slightly smaller than regular text */
+      }
+      
+      .footer-text {
+        font-size: 14px;
+        text-align: left;
       }
     </style>
   </head>
@@ -97,7 +105,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Current</h2>
                 <p>
-                  I am starting my PhD at the University of Michigan with Professors <a href="https://www.minjilab.com/">Minji Kim</a> and <a href="https://web.eecs.umich.edu/~girasole/">Laura Balzano</a> as my PIs. 
+                  I'm very excited to begin my PhD at the University of Michigan in the ECE department's <a href="https://ece.engin.umich.edu/research/research-areas/signal-image-processing-and-machine-learning"/> signal + image processing and machine learning</a> cluster this Fall, 2025! I'm very fortunate to be co-advised by Professors <a href="https://www.minjilab.com/">Minji Kim</a> and <a href="https://web.eecs.umich.edu/~girasole/">Laura Balzano</a>. 
                   My research focuses on computational graph algorithms and machine learning to understand genomics and biochemical structures.
                 </p>
               </td>
@@ -202,7 +210,7 @@
                   <h2>Teaching</h2>
                 </div>
               </td>
-                <td style="padding:8px;width:80%;vertical-align:center; font-size: 12px;">
+                <td style="padding:8px;width:80%;vertical-align:center;" class="teaching-text">
                 <a href="https://sites.cs.ucsb.edu/~cappello/240Z/">Undergrad Learning Assistant, UCSB CS40: Discrete Mathematics, F23, W24, F24</a>
                 <br>
                 <a href="https://ucsb-cs32.github.io">Undergrad Learning Assistant, UCSB CS32: Object Oriented Design and Implementation S23</a>
@@ -213,7 +221,7 @@
             <tr>
               <td style="padding:0px">
               <br>
-              <p style="text-align:right;font-size:small;"></p>
+              <p class="footer-text">
                 Thank you to <a href="https://jonbarron.info/">Jon Barron</a> for templating this site.
               </p>
               </td>
