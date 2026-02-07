@@ -15,11 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
+      html, body {
+        background-color: #ffffff;
+      }
       body {
         font-family: 'Georgia', serif;
         font-size: 18px;
         line-height: 1.6;
-        background-color: #f9f5eb; /* Off-white cream color */
       }
       
       /* Removing the font specification for headers, allowing them to use the default font */
@@ -71,7 +73,7 @@
           <!-- Name, links, and logos all in left column -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td style="padding:2.5%;width:58%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Laya Pullela
                 </p>
@@ -87,14 +89,14 @@
                 
                 <!-- Logos now in left column under hyperlinks with more space above -->
                 <div style="text-align:center; margin-top:45px;">
-                  <img src="images/ucsb.png" alt="UCSB Logo" style="height: 70px; margin-right: 15px; vertical-align: middle;">
-                  <span style="font-size: 28px; font-weight: bold; vertical-align: middle;">→</span>
-                  <img src="images/michigan.png" alt="Michigan Logo" style="height: 70px; margin-left: 15px; vertical-align: middle;">
+                  <img src="images/ucsb.png" alt="UCSB Logo" style="height: 100px; margin-right: 20px; vertical-align: middle;">
+                  <span style="font-size: 32px; font-weight: bold; vertical-align: middle;">→</span>
+                  <img src="images/michigan.png" alt="Michigan Logo" style="height: 100px; margin-left: 20px; vertical-align: middle;">
                 </div>
               </td>
               <!-- Profile image remains in right column -->
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/LayaPullela.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 10px;" alt="profile photo" src="images/LayaPullela.jpeg" class="hoverZoomLink"></a>
+              <td style="padding:2.5%;width:42%;vertical-align:middle;max-width:320px">
+                <a href="images/LayaPullela.jpeg"><img style="width:100%;max-width:100%;height:auto;object-fit: cover; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); display:block;" alt="profile photo" src="images/LayaPullela.jpeg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -146,12 +148,12 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr bgcolor="#ffffd0">
-              <td style="padding:16px;width:20%;vertical-align:middle">
+              <td style="padding:16px;width:24%;vertical-align:middle;max-width:200px">
                 <div class="one">
-                  <img src='images/temporal_vision.png' width="160">
+                  <img src='images/temporal_vision.png' width="200" style="max-width:100%;height:auto;border-radius: 6px; display:block;">
                 </div>
               </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
+              <td style="padding:8px;width:76%;vertical-align:middle">
                 <a href="https://arxiv.org/pdf/2404.14591">
                   <span class="papertitle">Predicting the Temporal Dynamics of Prosthetic Vision</span>
                 </a>
@@ -172,12 +174,12 @@
               </td>
             </tr>
             <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
+              <td style="padding:16px;width:24%;vertical-align:middle;max-width:200px">
                 <div class="one">
-                  <img src='images/nutribench.png' width="160">
+                  <img src='images/nutribench.png' width="200" style="max-width:100%;height:auto;border-radius: 6px; display:block;">
                 </div>
               </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
+              <td style="padding:8px;width:76%;vertical-align:middle">
                 <a href="https://openreview.net/pdf?id=6LtdZCyuZR">
                   <span class="papertitle">Nutribench: A Dataset for Evaluating Large Language Models on Nutrition Estimation from Meal Descriptions</span>
                 </a>
@@ -196,6 +198,24 @@
               </td>
             </tr>
           </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Medium Articles</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:8px;width:100%;vertical-align:middle">
+                <a href="https://medium.com/@lpullela2424/a-simple-implementation-of-denoising-diffusion-probabilistic-models-c4d56fb6f6c5?postPublishedType=repub">
+                  <span class="papertitle">A Simple Implementation of Denoising Diffusion Probabilistic Models</span>
+                </a>
+                <br>
+                <em>January 03, 2026</em>
+              </td>
+            </tr>
+          </tbody></table>
           <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
             <tr>
               <td>
@@ -206,17 +226,33 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-                <div class="colored-box" style="background-color: #edd892;">
-                  <h2>Teaching</h2>
+                <div class="colored-box" style="background-color: #edd892; padding: 10px; width: 100%; text-align: center;">
+                  <h2 style="margin: 0;">Teaching</h2>
                 </div>
               </td>
-                <td style="padding:8px;width:80%;vertical-align:center;" class="teaching-text">
-                <a href="https://sites.cs.ucsb.edu/~cappello/240Z/">Undergrad Learning Assistant, UCSB CS40: Discrete Mathematics, F23, W24, F24</a>
+              <td style="padding:8px;width:80%;vertical-align:middle;" class="teaching-text">
+                <a href="https://sites.cs.ucsb.edu/~cappello/240Z/">Learning Assistant, UCSB CS40: Discrete Math, F23, W24, F24</a>
                 <br>
-                <a href="https://ucsb-cs32.github.io">Undergrad Learning Assistant, UCSB CS32: Object Oriented Design and Implementation S23</a>
-                </td>
+                <a href="https://ucsb-cs32.github.io">Learning Assistant, UCSB CS32: Object Oriented Design, S23</a>
+              </td>
             </tr>
           </tbody></table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <div class="colored-box" style="background-color: #a6d4cb; padding: 10px; width: 100%; text-align: center;">
+                  <h2 style="margin: 0;">Blog</h2>
+                </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle;" class="teaching-text">
+                <a href="blog/wanderlust-diaries.html">Personal research projects</a>
+                <br>
+                <a href="blog/data-dialogues.html">Random and fun stuff </a>
+              </td>
+            </tr>
+          </tbody></table>
+          
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
